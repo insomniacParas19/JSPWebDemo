@@ -35,19 +35,13 @@ public class AreaServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String length = request.getParameter("length");
-		String breadth = request.getParameter("breadth");
+		double length =Double.parseDouble(request.getParameter("length")) ;
+		double breadth = Double.parseDouble(request.getParameter("breadth"));
 		
-		String result = request.getParameter("result");
+		double area = length * breadth;
+		request.setAttribute("area", area);
+		request.getRequestDispatcher("Result.jsp").forward(request, response);
 		
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Result.jsp");
-		request.setAttribute("value", result);
-		dispatcher.forward(request, response);
-		
-		CalculateArea calc = new CalculateArea();
-		double result = 0.0;
-		
-		result = calc.Area(length, breadth);
 		
 	}
 

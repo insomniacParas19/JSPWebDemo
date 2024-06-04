@@ -13,16 +13,16 @@
     
     <form action="/SignupServlet" method="post">
       <div class="input-box">
-        <input type="text" placeholder="Enter your name" required>
+        <input type="text" name = "firstname" placeholder="Enter firstname" required>
       </div>
       <div class="input-box">
-        <input type="text" placeholder="Enter your email" required>
+        <input type="text" name = "lastname" placeholder="Enter lastname" required>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Create password" required>
+        <input type="text" name = "username" placeholder="Enter your username or email" required>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Confirm password" required>
+        <input type="password" name = "password" placeholder="Create password" required>
       </div>
       <div class="policy">
         <input type="checkbox">
