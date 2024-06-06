@@ -27,7 +27,8 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public boolean login(String un, String pwd) {
-		// TODO Auto-generated method stub
+		
+		String sql = "select * from user where username='"+un+"' and password= '"+pwd+"' ";
 		return false;
 	}
 

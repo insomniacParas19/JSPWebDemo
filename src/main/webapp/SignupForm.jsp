@@ -11,7 +11,7 @@
 <div class="wrapper">
     <h2>Registration <a href="index.jsp" >Back</a></h2>
     
-    <form action="/SignupServlet" method="post">
+    <form action="SignupServlet" method="post">
       <div class="input-box">
         <input type="text" name = "firstname" placeholder="Enter firstname" required>
       </div>

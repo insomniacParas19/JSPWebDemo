@@ -53,7 +53,7 @@ public class SignupServlet extends HttpServlet {
 	UserService service =  new UserServiceImpl();
 		service.signup(u);
 		
-		request.getRequestDispatcher("Login.jsp").forward( request, response);
+		request.getRequestDispatcher("LoginForm.jsp").forward( request, response);
 	}
 
 }

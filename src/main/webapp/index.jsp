@@ -13,12 +13,13 @@
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-      <label class="logo">JSP SERVLET Demo</label>
+      <label class="logo">Hamro Clinic</label>
       <ul>
         <li><a class="active" href="Home.jsp">Home</a></li>
+        
         <li><a href="Gallery.jsp">Gallery</a></li>
         <li><a href="AboutUs.jsp">About Us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="Doctor.jsp">Doctor</a></li>
         <li><a href="LoginServlet">Login/Sign Up</a></li>
       </ul>
       
