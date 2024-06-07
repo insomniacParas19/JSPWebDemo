@@ -6,11 +6,11 @@
 <meta charset="ISO-8859-1">
 <title>Doctor</title>
 <link  rel="stylesheet" type="text/css" href="DoctorStyle.css">
-<script type="text/javascript" src="DoctorJs.js"></script>
 </head>
 <body>
 <div class="add-btn">
-    <button onclick="openForm()">Add Doctor</button>
+    <a href="addDoctorForm.jsp" class="learn">Add Doctor</a>
+
 </div>
 
 
@@ -30,6 +30,7 @@
     </thead>
     <tbody id="doctorTable">
         <!-- Doctors will be dynamically added here -->
+        ${name}
     </tbody>
 </table>
 </body>

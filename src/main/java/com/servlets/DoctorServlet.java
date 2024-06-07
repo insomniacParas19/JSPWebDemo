@@ -1,6 +1,8 @@
 package com.servlets;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -47,6 +49,10 @@ public class DoctorServlet extends HttpServlet {
 		String gen = request.getParameter("gender");
 		String note = request.getParameter("note");
 		
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		${name};
+	
 		//Send Doctor data in database
 		
 		Doctor d = new Doctor();
